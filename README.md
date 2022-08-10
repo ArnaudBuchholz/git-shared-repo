@@ -18,3 +18,7 @@ This will not prevent modification but an error is raised by git when trying to 
 (Not a perfect solution since it is technically possible to override this behavior).
 
 Another option would be to use a post-checkout hook to set the folder as read-only.
+
+## Providing a message for the commit
+
+The `-m` / `--message` option is supported
