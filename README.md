@@ -12,3 +12,9 @@ Then, depending on the container project state :
 * To **update** the link : `git subtree pull --prefix=<folder> <name> <branch> --squash`
 
 ## Preventing changes in the subtree
+
+Adds the `<folder>/` entry to the container `.gitignore`.
+This will not prevent modification but an error is raised by git when trying to stage the file.
+(Not a perfect solution since it is technically possible to override this behavior).
+
+Another option would be to use a post-checkout hook to set the folder as read-only.
